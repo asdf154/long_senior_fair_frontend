@@ -1,0 +1,145 @@
+.exhibitors__intro {
+    padding-bottom: 0;
+}
+
+/* Booth Grid */
+.exhibitors__booths {
+    padding: var(--space-2xl) 0 var(--space-4xl);
+}
+
+.exhibitors__booth-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+}
+
+.exhibitors__booth-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.exhibitors__booth-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.exhibitors__booth-image {
+    aspect-ratio: 16 / 10;
+}
+
+.exhibitors__booth-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--color-dark-navy);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.exhibitors__booth-placeholder span:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.exhibitors__booth-sub {
+    font-size: 0.85rem !important;
+    font-weight: 400 !important;
+    opacity: 0.5;
+}
+
+.exhibitors__booth-info {
+    padding: var(--space-xl);
+}
+
+.exhibitors__booth-info h3 {
+    font-size: 1.3rem;
+    color: var(--color-dark-navy);
+    margin-bottom: var(--space-sm);
+}
+
+.exhibitors__booth-info p {
+    color: var(--color-dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+}
+
+.exhibitors__booth-features {
+    margin-bottom: var(--space-lg);
+}
+
+.exhibitors__booth-features li {
+    position: relative;
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    color: var(--color-dark-gray);
+    font-size: 0.9rem;
+}
+
+.exhibitors__booth-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-sky-blue);
+    font-weight: 700;
+}
+
+/* Sales Kit */
+.exhibitors__sales-kit {
+    background: var(--color-light-bg);
+}
+
+.exhibitors__sales-kit-card {
+    text-align: center;
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4xl) var(--space-2xl);
+    box-shadow: var(--shadow-md);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.exhibitors__sales-kit-icon {
+    margin-bottom: var(--space-lg);
+}
+
+.exhibitors__sales-kit-card h2 {
+    font-size: 1.8rem;
+    color: var(--color-dark-navy);
+    margin-bottom: var(--space-md);
+}
+
+.exhibitors__sales-kit-card p {
+    color: var(--color-dark-gray);
+    margin-bottom: var(--space-xl);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.exhibitors__sales-kit-card .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Contact CTA */
+.exhibitors__contact {
+    background: var(--color-white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .exhibitors__booth-grid {
+        grid-template-columns: 1fr;
+    }
+}
