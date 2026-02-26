@@ -1,16 +1,73 @@
-# React + Vite
+# Seniors Fair SG Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite frontend for the Seniors Fair SG website.
 
-Currently, two official plugins are available:
+This project provides a multi-page event website experience for visitors and exhibitors, including event highlights, exhibitor package information, floor plan previews, and a contact form.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Home page with promotional carousel and event overview
+- Exhibitors page with booth package cards and sales kit section
+- Floor plan page with venue stats and layout placeholder
+- About page with event mission and organizer information
+- Contact page with client-side validated inquiry form
+- Shared navigation, countdown bar, and footer across all routes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 19
+- React Router DOM 7
+- Vite 7
+- ESLint 9
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Routes
+
+- `/` - Home
+- `/exhibitors` - Exhibitors
+- `/floor-plan` - Floor Plan
+- `/about` - About
+- `/contact` - Contact
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ (Node.js 20 LTS recommended)
+- npm 9+
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run in Development
+
+```bash
+npm run dev
+```
+
+The app runs on the Vite local development server (typically `http://localhost:5173`).
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build production assets into `dist/`
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint checks
+
+## Project Structure
+
+```text
+src/
+  components/   Reusable UI blocks (Navbar, Footer, Carousel, etc.)
+  pages/        Route-level pages
+  App.jsx       Route configuration and shared layout
+  main.jsx      Application entry point
+public/
+  assets/branding/
+```
+
+## Current Content State
+
+Some website content is still intentionally marked as "Coming Soon" while final event details, sponsorship information, and downloadable assets are being prepared.
