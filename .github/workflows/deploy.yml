@@ -25,7 +25,7 @@ jobs:
         run: npm ci
         
       - name: Build
-        run: npm run build -- --base=https://github.com/asdf154/long_senior_fair_frontend/
+        run: npm run build -- --base=long_senior_fair_frontend/
 
       - name: Fix SPA routing
         run: cp dist/index.html dist/404.html
