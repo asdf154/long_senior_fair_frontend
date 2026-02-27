@@ -4,8 +4,11 @@ pages:
   stage: deploy
   script:
     - npm ci
-    - npm run build -- --base=/SeniforFairFrontend/
-    - mv dist public
+    - npm run build
+    - mkdir -p public
+    - cp -r dist/* public/   # <- copy contents, not folder
   artifacts:
     paths:
       - public
+  rules:
+    - if: $CI_COMMIT_BRANCH
