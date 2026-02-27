@@ -3,7 +3,7 @@ name: Deploy Vite React to GitHub Pages
 on:
   push:
     branches:
-      - main  # deploy when main is updated
+      - deploy_test  # deploy when main is updated
 
 jobs:
   build-and-deploy:
