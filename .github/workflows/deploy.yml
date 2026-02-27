@@ -5,6 +5,9 @@ on:
     branches:
       - deploy_test  # deploy when main is updated
 
+permissions:
+  contents: write  # give workflow permission to push
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
