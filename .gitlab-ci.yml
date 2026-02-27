@@ -4,8 +4,8 @@ pages:
   stage: deploy
   script:
     - npm ci
-    - npm run build
-    - mv build public || mv dist public
+    - npm run build -- --base=/SeniforFairFrontend/
+    - mv dist public
   artifacts:
     paths:
       - public
