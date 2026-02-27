@@ -70,6 +70,24 @@ This repository includes a GitHub Actions workflow at `.github/workflows/deploy.
 
 After the workflow finishes, your site will be live on the Pages URL shown in the workflow run.
 
+## Deploy to GitHub Pages (GitHub Actions only)
+
+Yes — you can deploy this Vite app to GitHub Pages **without changing app code, `vite.config.js`, or `package.json` scripts**.
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml` that:
+
+- Builds using a relative base path (`npm run build -- --base=./`) so no app or Vite config changes are needed.
+- Publishes the built `dist/` folder with official GitHub Pages actions.
+- Copies `index.html` to `404.html` for React Router SPA fallback on refresh/direct URL access.
+
+### One-time GitHub setup
+
+1. Push to the `main` branch (or run the workflow manually from Actions).
+2. In GitHub, go to **Settings → Pages**.
+3. Set **Source** to **GitHub Actions**.
+
+After the workflow finishes, your site will be live on the Pages URL shown in the workflow run.
+
 ## Project Structure
 
 ```text

@@ -2,11 +2,12 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
+    const logoUrl = `${import.meta.env.BASE_URL}assets/branding/fa-logo.png`;
     return (
         <footer className="footer">
             <div className="footer__inner container">
                 <div className="footer__brand">
-                    <img src="/assets/branding/fa-logo.png" alt="Seniors Fair SG" className="footer__logo" />
+                    <img src={logoUrl} alt="Seniors Fair SG" className="footer__logo" />
                     <p className="footer__tagline">
                         Singapore's Premier Seniors Fair — bringing communities together.
                     </p>

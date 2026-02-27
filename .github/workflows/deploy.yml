@@ -2,6 +2,7 @@ name: Deploy Vite React to GitHub Pages
 
 on:
   push:
+
     branches: [main, deploy_test, gh_pages]
   workflow_dispatch:
 
