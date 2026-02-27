@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+    const logoUrl = `${import.meta.env.BASE_URL}assets/branding/fa-logo.png`;
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileOpen, setIsMobileOpen] = useState(false);
     const [isVisitorsOpen, setIsVisitorsOpen] = useState(false);
@@ -25,7 +26,7 @@ const Navbar = () => {
         <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
             <div className="navbar__inner">
                 <Link to="/" className="navbar__logo">
-                    <img src="/assets/branding/fa-logo.png" alt="Seniors Fair SG" />
+                    <img src={logoUrl} alt="Seniors Fair SG" />
                 </Link>
 
                 <ul className={`navbar__menu ${isMobileOpen ? 'navbar__menu--open' : ''}`}>

@@ -2,6 +2,7 @@ import HeroSection from '../components/HeroSection';
 import './About.css';
 
 const About = () => {
+    const logoUrl = `${import.meta.env.BASE_URL}assets/branding/fa-logo.png`;
     return (
         <div className="about">
             <HeroSection title="About Seniors Fair SG" subtitle="Our Story & Mission" />
@@ -85,7 +86,7 @@ const About = () => {
                             <div className="about__organizer-card">
                                 <h3>Organised By</h3>
                                 <div className="about__organizer-logo">
-                                    <img src="/assets/branding/fa-logo.png" alt="Seniors Fair SG" />
+                                    <img src={logoUrl} alt="Seniors Fair SG" />
                                 </div>
                                 <p>Seniors Fair SG © {new Date().getFullYear()}</p>
                             </div>
