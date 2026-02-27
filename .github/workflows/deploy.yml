@@ -25,7 +25,7 @@ jobs:
         run: npm ci
         
       - name: Build
-        run: npm run build -- --base=./
+        run: npm run build -- --base=/${{ github.repository }}/
 
       - name: Deploy to GitHub Pages
         run: |
