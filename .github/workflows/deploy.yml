@@ -25,7 +25,7 @@ jobs:
         run: npm ci
         
       - name: Build
-        run: npm run build -- --base=/long_senior_fair_frontend/
+        run: npm run build -- --base=https://asdf154.github.io/long_senior_fair_frontend/
 
       - name: Deploy to GitHub Pages
         run: |
