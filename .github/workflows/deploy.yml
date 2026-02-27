@@ -2,47 +2,52 @@ name: Deploy Vite React to GitHub Pages
 
 on:
   push:
-    branches:
-      - deploy_test
+    branches: [main, deploy_test, gh_pages]
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Vite React with relative paths
+      - name: Build
         run: npm run build -- --base=./
 
-      - name: Fix SPA routing
+      - name: SPA fallback for React Router
         run: cp dist/index.html dist/404.html
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
-          # create gh-pages branch if missing
-          git fetch origin gh-pages || true
-          git checkout --orphan gh-pages || git checkout gh-pages
-
-          # remove old files
-          git rm -rf . || true
-
-          # copy build files
-          cp -r dist/* .
-
-          git add .
-          git commit -m "Deploy React app"
-          git push -u origin gh-pages --force
+        id: deployment
+        uses: actions/deploy-pages@v4

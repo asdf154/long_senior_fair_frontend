@@ -55,6 +55,20 @@ The app runs on the Vite local development server (typically `http://localhost:5
 - `npm run build` - Build production assets into `dist/`
 - `npm run preview` - Preview the production build locally
 - `npm run lint` - Run ESLint checks
+  
+### One-time GitHub setup for Deploying to GitHub Pages
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml` that:
+
+- Builds using a relative base path (`npm run build -- --base=./`) so no app or Vite config changes are needed.
+- Publishes the built `dist/` folder with official GitHub Pages actions.
+- Copies `index.html` to `404.html` for React Router SPA fallback on refresh/direct URL access.
+
+1. Push to the `main` branch (or run the workflow manually from Actions).
+2. In GitHub, go to **Settings → Pages**.
+3. Set **Source** to **GitHub Actions**.
+
+After the workflow finishes, your site will be live on the Pages URL shown in the workflow run.
 
 ## Project Structure
 
