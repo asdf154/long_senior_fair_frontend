@@ -30,7 +30,7 @@ const Contact = () => {
                 <div className="container">
                     <div className="contact__grid">
                         <div className="contact__info">
-                            <h2 className="contact__heading">We'd Love To Hear From You</h2>
+                            <h2 className="contact__heading"><span style={{ letterSpacing: '2px' }}>We&apos;d</span> Love To Hear From You</h2>
                             <p>
                                 We're here to answer any question you might have. Please fill up the contact
                                 form and we will get back to you within 2 working days.
