@@ -66,6 +66,7 @@ const FloorPlan = () => {
                                     <line x1="15" y1="3" x2="15" y2="21" />
                                 </svg>
                                 <span>Floor Plan Image</span>
+                                <span className="placeholder-size-label">800 × 600 px (4:3 ratio)</span>
                                 <span className="coming-soon-badge">Coming Soon</span>
                             </div>
                         </div>

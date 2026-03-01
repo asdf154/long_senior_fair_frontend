@@ -44,6 +44,14 @@
     letter-spacing: 1px;
 }
 
+.carousel__placeholder-size {
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: -4px;
+}
+
 /* Dots */
 .carousel__dots {
     position: absolute;

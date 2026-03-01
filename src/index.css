@@ -222,6 +222,14 @@ select {
   font-style: italic;
 }
 
+.placeholder-size-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-dark-gray);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
 /* ===== RESPONSIVE BREAKPOINTS ===== */
 /* Tablet: 768px */
 /* Mobile: 480px */

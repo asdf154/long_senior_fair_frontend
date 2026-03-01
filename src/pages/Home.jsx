@@ -16,6 +16,7 @@ const Home = () => {
                             <span className="coming-soon-badge">Coming Soon</span>
                             <h3>Featured Sponsor</h3>
                             <p>Sponsor details will appear here</p>
+                            <span className="placeholder-size-label">Logo: 400 × 200 px (2:1 ratio)</span>
                         </div>
                     </div>
                 </div>
@@ -118,9 +119,11 @@ const Home = () => {
                         <div className="home__sponsor-grid home__sponsor-grid--large">
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 400 × 200 px</span>
                             </div>
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 400 × 200 px</span>
                             </div>
                         </div>
                     </div>
@@ -133,12 +136,15 @@ const Home = () => {
                         <div className="home__sponsor-grid">
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 300 × 150 px</span>
                             </div>
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 300 × 150 px</span>
                             </div>
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 300 × 150 px</span>
                             </div>
                         </div>
                     </div>
@@ -151,15 +157,19 @@ const Home = () => {
                         <div className="home__sponsor-grid home__sponsor-grid--small">
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
                             </div>
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
                             </div>
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
                             </div>
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
                             </div>
                         </div>
                     </div>
@@ -186,6 +196,7 @@ const Home = () => {
                                     <path d="M21 15l-5-5L5 21" />
                                 </svg>
                                 <span>Event Highlights Photo</span>
+                                <span className="placeholder-size-label">600 × 375 px (16:10 ratio)</span>
                             </div>
                         </div>
                     </div>

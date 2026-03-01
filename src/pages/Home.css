@@ -122,7 +122,6 @@
 .home__actions {
     background: var(--color-light-bg);
     padding: var(--space-4xl) 0;
-    border-top: 3px solid var(--color-sky-blue);
 }
 
 .home__actions-grid {
@@ -271,8 +270,10 @@
     border-radius: var(--radius-md);
     padding: var(--space-3xl) var(--space-xl);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: var(--space-xs);
     min-height: 120px;
 }
 

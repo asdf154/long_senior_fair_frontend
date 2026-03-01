@@ -22,7 +22,7 @@ const Exhibitors = () => {
                             <div className="exhibitors__booth-image">
                                 <div className="exhibitors__booth-placeholder">
                                     <span>3x3 Booth</span>
-                                    <span className="exhibitors__booth-sub">Image Placeholder</span>
+                                    <span className="exhibitors__booth-sub">Photo: 560 × 350 px (16:10)</span>
                                 </div>
                             </div>
                             <div className="exhibitors__booth-info">
@@ -42,7 +42,7 @@ const Exhibitors = () => {
                             <div className="exhibitors__booth-image">
                                 <div className="exhibitors__booth-placeholder">
                                     <span>6x9 Booth</span>
-                                    <span className="exhibitors__booth-sub">Image Placeholder</span>
+                                    <span className="exhibitors__booth-sub">Photo: 560 × 350 px (16:10)</span>
                                 </div>
                             </div>
                             <div className="exhibitors__booth-info">
