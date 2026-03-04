@@ -9,18 +9,17 @@
 .carousel__viewport {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 7;
+    aspect-ratio: 16 / 5;
     perspective: 1200px;
 }
 
 /* ===== SLIDES ===== */
 .carousel__slide {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
     width: 70%;
-    height: 100%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
     pointer-events: none;
@@ -30,7 +29,7 @@
 
 .carousel__slide-inner {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 16 / 7;
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -45,7 +44,7 @@
 
 /* Active slide — center, full size, elevated */
 .carousel__slide--active {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     z-index: 3;
     opacity: 1;
     pointer-events: auto;
@@ -57,7 +56,7 @@
 
 /* Next slide — right, smaller, partially visible */
 .carousel__slide--next {
-    transform: translateX(10%) scale(0.85);
+    transform: translate(10%, -50%) scale(0.85);
     z-index: 2;
     opacity: 1;
     pointer-events: auto;
@@ -65,7 +64,7 @@
 
 /* Previous slide — left, smaller, partially visible */
 .carousel__slide--prev {
-    transform: translateX(-110%) scale(0.85);
+    transform: translate(-110%, -50%) scale(0.85);
     z-index: 2;
     opacity: 1;
     pointer-events: auto;
@@ -73,21 +72,21 @@
 
 /* Far next — peeking from right edge */
 .carousel__slide--far-next {
-    transform: translateX(60%) scale(0.7);
+    transform: translate(60%, -50%) scale(0.7);
     z-index: 1;
     opacity: 0.4;
 }
 
 /* Far previous — peeking from left edge */
 .carousel__slide--far-prev {
-    transform: translateX(-160%) scale(0.7);
+    transform: translate(-160%, -50%) scale(0.7);
     z-index: 1;
     opacity: 0.4;
 }
 
 /* Hidden slides */
 .carousel__slide--hidden {
-    transform: translateX(-50%) scale(0.6);
+    transform: translate(-50%, -50%) scale(0.6);
     z-index: 0;
     opacity: 0;
 }
@@ -96,7 +95,7 @@
 .carousel__placeholder {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--color-dark-navy) 0%, var(--color-dark-navy-light) 100%);
+    background: var(--color-dark-navy);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,20 +157,16 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .carousel__viewport {
-        aspect-ratio: 16 / 9;
-    }
-
     .carousel__slide {
         width: 80%;
     }
 
     .carousel__slide--next {
-        transform: translateX(15%) scale(0.82);
+        transform: translate(15%, -50%) scale(0.82);
     }
 
     .carousel__slide--prev {
-        transform: translateX(-115%) scale(0.82);
+        transform: translate(-115%, -50%) scale(0.82);
     }
 
     .carousel__slide--far-next,

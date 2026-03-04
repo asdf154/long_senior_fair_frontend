@@ -103,7 +103,7 @@
 
 .home__action-card:hover::before {
     height: 4px;
-    background: var(--gradient-countdown);
+    background: var(--color-sky-blue);
 }
 
 .home__action-number {

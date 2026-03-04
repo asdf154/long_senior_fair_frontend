@@ -127,9 +127,7 @@ const Navbar = () => {
             >
                 {/* Drawer header */}
                 <div className="navbar__drawer-header">
-                    <Link to="/" className="navbar__drawer-logo" onClick={closeMobile}>
-                        <img src="/assets/branding/fa-logo.png" alt="Seniors Fair SG" />
-                    </Link>
+                    <div></div>
                     <button className="navbar__drawer-close" onClick={closeMobile} aria-label="Close menu">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                             <path d="M18 6L6 18" />
