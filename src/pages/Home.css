@@ -44,7 +44,7 @@
 
 .home__info-card p {
     font-size: 0.9rem;
-    color: var(--color-mid-gray);
+    color: var(--color-dark-gray);
 }
 
 /* ===== ABOUT BLURB ===== */
@@ -148,7 +148,7 @@
 
 .home__action-card p {
     font-size: 0.9rem;
-    color: var(--color-mid-gray);
+    color: var(--color-dark-gray);
 }
 
 /* ===== SPONSORS ===== */
@@ -181,15 +181,19 @@
 }
 
 .home__sponsor-badge--platinum {
-    color: #9CA3AF;
+    color: #7C3AED;
 }
 
 .home__sponsor-badge--gold {
-    color: #F59E0B;
+    color: #EAB308;
 }
 
 .home__sponsor-badge--silver {
-    color: #94A3B8;
+    color: #64748B;
+}
+
+.home__sponsor-badge--bronze {
+    color: #B45309;
 }
 
 .home__sponsor-grid {
@@ -204,8 +208,13 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.home__sponsor-grid--single {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+}
+
 .home__sponsor-grid--small {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .home__sponsor-placeholder {
@@ -219,6 +228,22 @@
     justify-content: center;
     gap: var(--space-xs);
     min-height: 120px;
+    text-align: center;
+}
+
+.home__sponsor-grid--small .home__sponsor-placeholder {
+    padding: var(--space-2xl) var(--space-sm);
+}
+
+.home__sponsor-grid--small .coming-soon-badge {
+    font-size: 0.75rem;
+    padding: var(--space-xs) var(--space-sm);
+    white-space: nowrap;
+}
+
+.home__sponsor-grid--small .placeholder-size-label {
+    font-size: 0.7rem;
+    white-space: nowrap;
 }
 
 /* ===== CTA ===== */
@@ -294,6 +319,10 @@
     .home__sponsor-grid--large,
     .home__sponsor-grid--small {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home__sponsor-grid--single {
+        grid-template-columns: 1fr;
     }
 
     .home__cta-inner {

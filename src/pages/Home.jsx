@@ -38,29 +38,29 @@ const Home = () => {
                             <div className="home__info-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-sky-blue)" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /><rect x="7" y="13" width="3" height="3" rx="0.5" /></svg>
                             </div>
-                            <h4>Coming Soon</h4>
+                            <h4>November 2026</h4>
                             <p>Dates TBD</p>
                         </div>
                         <div className="home__info-card">
                             <div className="home__info-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-hot-pink)" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
                             </div>
-                            <h4>Coming Soon</h4>
-                            <p>Time TBD</p>
+                            <h4>10AM – 6PM</h4>
+                            <p>Entire 4 days</p>
                         </div>
                         <div className="home__info-card">
                             <div className="home__info-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-sky-blue)" strokeWidth="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg>
                             </div>
-                            <h4>Coming Soon</h4>
-                            <p>Venue TBD</p>
+                            <h4>Singapore EXPO</h4>
+                            <p>Venue</p>
                         </div>
                         <div className="home__info-card">
                             <div className="home__info-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-hot-pink)" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87" /><path d="M16 3.13a4 4 0 010 7.75" /></svg>
                             </div>
                             <h4>Free Admission</h4>
-                            <p>All are welcome</p>
+                            <p>For all</p>
                         </div>
                     </div>
                 </div>
@@ -103,13 +103,9 @@ const Home = () => {
                     <div className="home__sponsor-tier">
                         <h3 className="home__sponsor-tier-title">
                             <span className="home__sponsor-badge home__sponsor-badge--platinum">★</span>
-                            Platinum Sponsors
+                            Platinum Sponsor
                         </h3>
-                        <div className="home__sponsor-grid home__sponsor-grid--large">
-                            <div className="home__sponsor-placeholder">
-                                <span className="coming-soon-badge">Coming Soon</span>
-                                <span className="placeholder-size-label">Logo: 400 × 200 px</span>
-                            </div>
+                        <div className="home__sponsor-grid home__sponsor-grid--single">
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
                                 <span className="placeholder-size-label">Logo: 400 × 200 px</span>
@@ -143,22 +139,67 @@ const Home = () => {
                             <span className="home__sponsor-badge home__sponsor-badge--silver">★</span>
                             Silver Sponsors
                         </h3>
+                        <div className="home__sponsor-grid">
+                            <div className="home__sponsor-placeholder">
+                                <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
+                            </div>
+                            <div className="home__sponsor-placeholder">
+                                <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
+                            </div>
+                            <div className="home__sponsor-placeholder">
+                                <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="home__sponsor-tier">
+                        <h3 className="home__sponsor-tier-title">
+                            <span className="home__sponsor-badge home__sponsor-badge--bronze">★</span>
+                            Bronze Sponsors
+                        </h3>
                         <div className="home__sponsor-grid home__sponsor-grid--small">
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
-                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
                             </div>
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
-                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
                             </div>
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
-                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
                             </div>
                             <div className="home__sponsor-placeholder">
                                 <span className="coming-soon-badge">Coming Soon</span>
-                                <span className="placeholder-size-label">Logo: 200 × 100 px</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
+                            </div>
+                            <div className="home__sponsor-placeholder">
+                                <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
+                            </div>
+                            <div className="home__sponsor-placeholder">
+                                <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
+                            </div>
+                            <div className="home__sponsor-placeholder">
+                                <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
+                            </div>
+                            <div className="home__sponsor-placeholder">
+                                <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
+                            </div>
+                            <div className="home__sponsor-placeholder">
+                                <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
+                            </div>
+                            <div className="home__sponsor-placeholder">
+                                <span className="coming-soon-badge">Coming Soon</span>
+                                <span className="placeholder-size-label">Logo: 150 × 80 px</span>
                             </div>
                         </div>
                     </div>
