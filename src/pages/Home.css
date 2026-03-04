@@ -1,13 +1,13 @@
 /* ===== CAROUSEL SECTION ===== */
 .home__carousel-section {
     background: var(--color-white);
-    padding: var(--space-2xl) 0;
+    padding: var(--space-lg) 0;
     border-bottom: 3px solid var(--color-sky-blue);
+    overflow: hidden;
 }
 
 .home__carousel-main {
-    border-radius: var(--radius-lg);
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* ===== INFO STRIP ===== */
