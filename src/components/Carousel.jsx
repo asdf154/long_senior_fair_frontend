@@ -8,6 +8,7 @@ const Carousel = ({ slides = [], autoPlayInterval = 4000 }) => {
         { id: 1, label: 'Seniors Fair SG — Banner 1', size: '1472 × 644 px (16:7 ratio)' },
         { id: 2, label: 'Seniors Fair SG — Banner 2', size: '1472 × 644 px (16:7 ratio)' },
         { id: 3, label: 'Seniors Fair SG — Banner 3', size: '1472 × 644 px (16:7 ratio)' },
+        { id: 4, label: 'Featured Sponsor', size: '1472 × 644 px (16:7 ratio)' },
     ];
 
     const items = slides.length > 0 ? slides : defaultSlides;

@@ -11,22 +11,24 @@ const Home = () => {
                     <div className="home__carousel-main">
                         <Carousel />
                     </div>
-                    <div className="home__carousel-side">
-                        <div className="home__promo-card">
-                            <span className="coming-soon-badge">Coming Soon</span>
-                            <h3>Featured Sponsor</h3>
-                            <p>Sponsor details will appear here</p>
-                            <span className="placeholder-size-label">Logo: 400 × 200 px (2:1 ratio)</span>
-                        </div>
-                    </div>
                 </div>
             </section>
 
-            {/* Tagline */}
-            <div className="home__tagline">
-                <p className="home__tagline-sub">Singapore's Premier Seniors Fair</p>
-                <h2>Event Information</h2>
-            </div>
+            {/* About Blurb */}
+            <section className="home__about section">
+                <div className="container">
+                    <h2 className="section-title">Discover Seniors Fair SG 2026</h2>
+                    <p className="home__about-text">
+                        <strong>Join us at Singapore's premier seniors exhibition.</strong> Discover a comprehensive range of
+                        exhibitors offering health and wellness solutions, financial planning services, lifestyle
+                        innovations, travel experiences and more.
+                    </p>
+                    <p className="home__about-text">
+                        Enjoy exclusive event-only offers and connect face-to-face with trusted providers, all in one
+                        convenient location.
+                    </p>
+                </div>
+            </section>
 
             {/* Event Info Strip */}
             <section className="home__info-strip">
@@ -61,19 +63,6 @@ const Home = () => {
                             <p>All are welcome</p>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            {/* About Blurb */}
-            <section className="home__about section">
-                <div className="container">
-                    <h2 className="section-title">Discover Seniors Fair SG</h2>
-                    <p className="home__about-text">
-                        Join us at Singapore's premier seniors fair! Discover a wide range of exhibitors offering
-                        health & wellness products, financial planning, lifestyle services, travel packages, and
-                        much more — all tailored for the vibrant senior community. Take advantage of exclusive
-                        deals and connect with trusted providers in one convenient location.
-                    </p>
                 </div>
             </section>
 
