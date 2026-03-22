@@ -22,7 +22,7 @@ const Carousel = ({ slides = [], autoPlayInterval = 4000 }) => {
         if (isTransitioning) return;
         setIsTransitioning(true);
         setCurrent(((index % total) + total) % total);
-        setTimeout(() => setIsTransitioning(false), 500);
+        setTimeout(() => setIsTransitioning(false), 600);
     }, [isTransitioning, total]);
 
     const next = useCallback(() => goTo(current + 1), [current, goTo]);
@@ -121,6 +121,17 @@ const Carousel = ({ slides = [], autoPlayInterval = 4000 }) => {
                     <path d="M9 18l6-6-6-6" />
                 </svg>
             </button>
+
+            <div className="carousel__dots">
+                {items.map((_, index) => (
+                    <button
+                        key={index}
+                        className={`carousel__dot ${index === current ? 'carousel__dot--active' : ''}`}
+                        onClick={() => goTo(index)}
+                        aria-label={`Go to slide ${index + 1}`}
+                    />
+                ))}
+            </div>
         </div>
     );
 };

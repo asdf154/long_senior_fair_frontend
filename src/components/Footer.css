@@ -14,7 +14,7 @@
 
 /* Brand */
 .footer__logo {
-    height: 120px;
+    height: 90px;
     width: auto;
     margin-bottom: var(--space-md);
     filter: brightness(0) invert(1);
@@ -142,6 +142,10 @@
     }
 
     .footer__social-icons {
+        justify-content: center;
+    }
+
+    .footer__contact ul li {
         justify-content: center;
     }
 

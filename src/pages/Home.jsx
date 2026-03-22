@@ -39,28 +39,24 @@ const Home = () => {
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-sky-blue)" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /><rect x="7" y="13" width="3" height="3" rx="0.5" /></svg>
                             </div>
                             <h4>November 2026</h4>
-                            <p>Dates TBD</p>
                         </div>
                         <div className="home__info-card">
                             <div className="home__info-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-hot-pink)" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
                             </div>
                             <h4>10AM – 6PM</h4>
-                            <p>Entire 4 days</p>
                         </div>
                         <div className="home__info-card">
                             <div className="home__info-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-sky-blue)" strokeWidth="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg>
                             </div>
                             <h4>Singapore EXPO</h4>
-                            <p>Venue</p>
                         </div>
                         <div className="home__info-card">
                             <div className="home__info-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-hot-pink)" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87" /><path d="M16 3.13a4 4 0 010 7.75" /></svg>
                             </div>
                             <h4>Free Admission</h4>
-                            <p>For all</p>
                         </div>
                     </div>
                 </div>
@@ -72,23 +68,19 @@ const Home = () => {
                     <div className="home__actions-grid">
                         <Link to="/exhibitors" className="home__action-card">
                             <div className="home__action-number">01</div>
-                            <h3>Exhibitors</h3>
-                            <p>View exhibitor list</p>
+                            <h3>View Exhibitors</h3>
                         </Link>
-                        <Link to="/exhibitors#sales-kit" className="home__action-card">
+                        <Link to="/exhibitors" className="home__action-card">
                             <div className="home__action-number">02</div>
-                            <h3>Download Sales Kit</h3>
-                            <p>Coming Soon...</p>
+                            <h3>Exhibit with us</h3>
                         </Link>
                         <Link to="/floor-plan" className="home__action-card">
                             <div className="home__action-number">03</div>
                             <h3>Floor Plan</h3>
-                            <p>View event layout</p>
                         </Link>
                         <Link to="/about" className="home__action-card">
                             <div className="home__action-number">04</div>
-                            <h3>About Us</h3>
-                            <p>Learn more about the event</p>
+                            <h3>About Seniors Fair SG</h3>
                         </Link>
                     </div>
                 </div>

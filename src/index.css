@@ -23,8 +23,8 @@
   /* ~5K */
   --color-light-gray: #e6e6e6;
   /* 10K */
-  --color-mid-gray: #cccccc;
-  /* 20K — greyed text */
+  --color-mid-gray: #777777;
+  /* 50K — secondary text */
   --color-dark-gray: #4D4D4D;
   /* 70K — body text */
   --color-text: #4D4D4D;
@@ -84,6 +84,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {

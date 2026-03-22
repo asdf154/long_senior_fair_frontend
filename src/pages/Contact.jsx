@@ -24,7 +24,7 @@ const Contact = () => {
 
     return (
         <div className="contact">
-            <HeroSection title="Contact" subtitle="Seniors Fair SG" />
+            <HeroSection title="Contact us" subtitle="Seniors Fair SG" titleClassName="hero__title--small" subtitleClassName="hero__subtitle--large" />
 
             <section className="contact__content section">
                 <div className="container">
@@ -93,8 +93,8 @@ const Contact = () => {
                                     <input type="email" id="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
                                 </div>
                                 <div className="contact__field">
-                                    <label htmlFor="company">Company Website</label>
-                                    <input type="url" id="company" name="company" placeholder="Company Website" value={formData.company} onChange={handleChange} />
+                                    <label htmlFor="company">Company Name</label>
+                                    <input type="text" id="company" name="company" placeholder="Company Name" value={formData.company} onChange={handleChange} />
                                 </div>
                                 <div className="contact__field">
                                     <label htmlFor="subject">Subject <span>*</span></label>

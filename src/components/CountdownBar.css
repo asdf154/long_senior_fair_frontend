@@ -1,12 +1,12 @@
 .countdown-bar {
     background: var(--color-sky-blue);
     color: var(--color-white);
-    padding: var(--space-sm) var(--space-xl);
+    padding: var(--space-xs) var(--space-xl);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: var(--space-sm);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.5px;
     position: relative;
@@ -24,7 +24,7 @@
 
 .countdown-unit strong {
     font-weight: 700;
-    font-size: 1.05rem;
+    font-size: 0.9rem;
 }
 
 .countdown-colon {
@@ -34,8 +34,8 @@
 
 @media (max-width: 480px) {
     .countdown-bar {
-        font-size: 0.75rem;
-        padding: var(--space-xs) var(--space-md);
+        font-size: 0.7rem;
+        padding: 4px var(--space-sm);
         gap: 4px;
     }
 

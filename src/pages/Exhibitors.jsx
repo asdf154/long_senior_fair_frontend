@@ -1,7 +1,43 @@
+import { useState } from 'react';
 import HeroSection from '../components/HeroSection';
+import EnquiryDialog from '../components/EnquiryDialog';
+import BoothGallery from '../components/BoothGallery';
 import './Exhibitors.css';
 
+const legacyImages = [
+    { src: '/assets/booths/3x3-corner-l.png', alt: '3x3 Corner Booth - Left View' },
+    { src: '/assets/booths/3x3-corner-r.png', alt: '3x3 Corner Booth - Right View' },
+    { src: '/assets/booths/3x3-sandwich-l.png', alt: '3x3 Sandwich Booth - Left View' },
+    { src: '/assets/booths/3x3-sandwich-r.png', alt: '3x3 Sandwich Booth - Right View' },
+    { src: '/assets/booths/3x3-set-6units-l.png', alt: '3x3 Set (6 Units) - Left View' },
+    { src: '/assets/booths/3x3-set-6units-r.png', alt: '3x3 Set (6 Units) - Right View' },
+];
+
+const activeAgersImages = [
+    { src: '/assets/booths/3x9-peninsula-l.png', alt: '3x9 Peninsula Booth - Left View' },
+    { src: '/assets/booths/3x9-peninsula-r.png', alt: '3x9 Peninsula Booth - Right View' },
+    { src: '/assets/booths/3x9-corner-l.png', alt: '3x9 Corner Booth - Left View' },
+    { src: '/assets/booths/3x9-corner-r.png', alt: '3x9 Corner Booth - Right View' },
+    { src: '/assets/booths/3x9-corner-set-2units-l.png', alt: '3x9 Corner Set (2 Units) - Left View' },
+    { src: '/assets/booths/3x9-corner-set-2units-r.png', alt: '3x9 Corner Set (2 Units) - Right View' },
+    { src: '/assets/booths/3x9-peninsula-set-2units-opposite-l.png', alt: '3x9 Peninsula Set (2 Units) - Left View' },
+    { src: '/assets/booths/3x9-peninsula-set-2units-opposite-r.png', alt: '3x9 Peninsula Set (2 Units) - Right View' },
+];
+
+const pioneersImages = [
+    { src: '/assets/booths/6x9-shortside-wall-l.png', alt: '6x9 Shortside Wall - Left View' },
+    { src: '/assets/booths/6x9-shortside-wall-r.png', alt: '6x9 Shortside Wall - Right View' },
+    { src: '/assets/booths/6x9-shortside-wall-f.png', alt: '6x9 Shortside Wall - Front View' },
+    { src: '/assets/booths/6x9-shortside-wall-s.png', alt: '6x9 Shortside Wall - Side View' },
+    { src: '/assets/booths/6x9-long-side-wall-l.png', alt: '6x9 Long Side Wall - Left View' },
+    { src: '/assets/booths/6x9-long-side-wall-r.png', alt: '6x9 Long Side Wall - Right View' },
+    { src: '/assets/booths/6x9-long-side-wall-f.png', alt: '6x9 Long Side Wall - Front View' },
+    { src: '/assets/booths/6x9-long-side-wall-s.png', alt: '6x9 Long Side Wall - Side View' },
+];
+
 const Exhibitors = () => {
+    const [dialogOpen, setDialogOpen] = useState(false);
+
     return (
         <div className="exhibitors">
             <HeroSection title="Exhibitors" subtitle="Seniors Fair SG" />
@@ -18,70 +54,65 @@ const Exhibitors = () => {
             <section className="exhibitors__booths">
                 <div className="container">
                     <div className="exhibitors__booth-grid">
-                        <div className="exhibitors__booth-card">
+                        <div className="exhibitors__booth-card" data-booth="legacy">
                             <div className="exhibitors__booth-image">
-                                <div className="exhibitors__booth-placeholder">
-                                    <span>3x3 Booth</span>
-                                    <span className="exhibitors__booth-sub">Photo: 560 × 350 px (16:10)</span>
-                                </div>
+                                <BoothGallery images={legacyImages} />
                             </div>
                             <div className="exhibitors__booth-info">
-                                <h3>Standard Booth (3x3)</h3>
-                                <p>Perfect for small businesses and individual exhibitors looking to showcase their products and services.</p>
+                                <h3>Legacy Booth</h3>
+                                <p className="exhibitors__booth-ideal">Ideal for: SMEs & First-time Exhibitors</p>
+                                <p className="exhibitors__booth-size">Minimum Size: 9 sqm (3m x 3m)</p>
                                 <ul className="exhibitors__booth-features">
-                                    <li>3m × 3m floor space</li>
-                                    <li>Basic booth structure included</li>
-                                    <li>Standard lighting & signage</li>
-                                    <li>2 exhibitor passes</li>
+                                    <li>Needle-punch Carpet</li>
+                                    <li>White Polyester Wall Panels</li>
+                                    <li>Fascia Board (Co. Name)</li>
+                                    <li>1x Information Desk</li>
+                                    <li>2x Folding Chairs</li>
+                                    <li>1x 13amp Power Point</li>
+                                    <li>2x Fluorescent Tubes</li>
+                                    <li>Option to choose 1 Side Open</li>
+                                    <li>Option to choose 2 Side Open</li>
                                 </ul>
-                                <span className="coming-soon-badge">Pricing Coming Soon</span>
+                                <button className="btn btn-primary" onClick={() => setDialogOpen(true)}>Enquire with us</button>
                             </div>
                         </div>
 
-                        <div className="exhibitors__booth-card">
+                        <div className="exhibitors__booth-card" data-booth="active-agers">
                             <div className="exhibitors__booth-image">
-                                <div className="exhibitors__booth-placeholder">
-                                    <span>6x9 Booth</span>
-                                    <span className="exhibitors__booth-sub">Photo: 560 × 350 px (16:10)</span>
-                                </div>
+                                <BoothGallery images={activeAgersImages} />
                             </div>
                             <div className="exhibitors__booth-info">
-                                <h3>Premium Booth (6x9)</h3>
-                                <p>Ideal for larger organizations wanting a prominent presence with premium visibility and foot traffic.</p>
+                                <h3>Active Agers Booth</h3>
+                                <p className="exhibitors__booth-ideal">Ideal for: Brands wanting high visibility</p>
+                                <p className="exhibitors__booth-size">Minimum Size: 27 sqm (3m x 9m)</p>
                                 <ul className="exhibitors__booth-features">
-                                    <li>6m × 9m floor space</li>
-                                    <li>Custom booth design options</li>
-                                    <li>Premium lighting & branding</li>
-                                    <li>6 exhibitor passes</li>
-                                    <li>Priority floor placement</li>
+                                    <li>Everything in Legacy Booth</li>
+                                    <li>Prime traffic flow location</li>
+                                    <li>Option to choose 2 Side Open (Peninsula)</li>
+                                    <li>Option to choose 3 Side Open (Corner)</li>
                                 </ul>
-                                <span className="coming-soon-badge">Pricing Coming Soon</span>
+                                <button className="btn btn-primary" onClick={() => setDialogOpen(true)}>Enquire with us</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
 
-            <section className="exhibitors__sales-kit section" id="sales-kit">
-                <div className="container">
-                    <div className="exhibitors__sales-kit-card">
-                        <div className="exhibitors__sales-kit-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-sky-blue)" strokeWidth="1.5">
-                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-                                <polyline points="7 10 12 15 17 10" />
-                                <line x1="12" y1="15" x2="12" y2="3" />
-                            </svg>
+                        <div className="exhibitors__booth-card" data-booth="pioneers">
+                            <div className="exhibitors__booth-image">
+                                <BoothGallery images={pioneersImages} />
+                            </div>
+                            <div className="exhibitors__booth-info">
+                                <h3>Pioneers Booth</h3>
+                                <p className="exhibitors__booth-ideal">Ideal for: Custom Branding & Large Displays</p>
+                                <p className="exhibitors__booth-size">Minimum Size: 54 sqm (6m x 9m)</p>
+                                <ul className="exhibitors__booth-features">
+                                    <li>Everything in Legacy Booth</li>
+                                    <li>Prime traffic flow location</li>
+                                    <li>Full flexibility for custom build</li>
+                                    <li>Requires "Design-to-Print"</li>
+                                    <li>Option to choose Bare Floor Space Only</li>
+                                </ul>
+                                <button className="btn btn-primary" onClick={() => setDialogOpen(true)}>Enquire with us</button>
+                            </div>
                         </div>
-                        <h2>Download Sales Kit</h2>
-                        <p>Get all the information you need about booth packages, sponsorship tiers, and exhibitor benefits.</p>
-                        <button className="btn btn-primary" disabled>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-                                <polyline points="7 10 12 15 17 10" />
-                                <line x1="12" y1="15" x2="12" y2="3" />
-                            </svg>
-                            Download PDF — Coming Soon
-                        </button>
                     </div>
                 </div>
             </section>
@@ -92,9 +123,11 @@ const Exhibitors = () => {
                     <p className="section-subtitle">
                         Contact us to learn more about exhibitor packages and early bird pricing.
                     </p>
-                    <a href="/contact" className="btn btn-secondary">Contact Us</a>
+                    <button className="btn btn-secondary" onClick={() => setDialogOpen(true)}>Contact Us</button>
                 </div>
             </section>
+
+            <EnquiryDialog isOpen={dialogOpen} onClose={() => setDialogOpen(false)} />
         </div>
     );
 };

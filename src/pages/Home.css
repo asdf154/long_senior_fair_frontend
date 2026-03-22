@@ -2,8 +2,18 @@
 .home__carousel-section {
     background: var(--color-white);
     padding: var(--space-lg) 0;
-    border-bottom: 3px solid var(--color-sky-blue);
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .home__carousel-section {
+        padding: 0;
+    }
+
+    .home__carousel-section .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .home__carousel-main {
@@ -51,6 +61,10 @@
 .home__about {
     background: var(--color-white);
     border-bottom: 3px solid var(--color-sky-blue);
+}
+
+.home__about .section-title {
+    font-size: 2.6rem;
 }
 
 .home__about-text {
@@ -153,6 +167,7 @@
 
 /* ===== SPONSORS ===== */
 .home__sponsors {
+    display: none;
     background: var(--color-light-bg);
 }
 
@@ -337,11 +352,7 @@
 
 @media (max-width: 480px) {
     .home__info-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .home__info-card {
-        border-right: none !important;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .home__actions-grid {
