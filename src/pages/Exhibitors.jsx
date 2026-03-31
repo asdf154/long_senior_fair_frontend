@@ -5,34 +5,34 @@ import BoothGallery from '../components/BoothGallery';
 import './Exhibitors.css';
 
 const legacyImages = [
-    { src: '/assets/booths/3x3-corner-l.png', alt: '3x3 Corner Booth - Left View' },
-    { src: '/assets/booths/3x3-corner-r.png', alt: '3x3 Corner Booth - Right View' },
-    { src: '/assets/booths/3x3-sandwich-l.png', alt: '3x3 Sandwich Booth - Left View' },
-    { src: '/assets/booths/3x3-sandwich-r.png', alt: '3x3 Sandwich Booth - Right View' },
-    { src: '/assets/booths/3x3-set-6units-l.png', alt: '3x3 Set (6 Units) - Left View' },
-    { src: '/assets/booths/3x3-set-6units-r.png', alt: '3x3 Set (6 Units) - Right View' },
+    { src: '/assets/booths/3x3-corner-l.webp', alt: '3x3 Corner Booth - Left View' },
+    { src: '/assets/booths/3x3-corner-r.webp', alt: '3x3 Corner Booth - Right View' },
+    { src: '/assets/booths/3x3-sandwich-l.webp', alt: '3x3 Sandwich Booth - Left View' },
+    { src: '/assets/booths/3x3-sandwich-r.webp', alt: '3x3 Sandwich Booth - Right View' },
+    { src: '/assets/booths/3x3-set-6units-l.webp', alt: '3x3 Set (6 Units) - Left View' },
+    { src: '/assets/booths/3x3-set-6units-r.webp', alt: '3x3 Set (6 Units) - Right View' },
 ];
 
 const activeAgersImages = [
-    { src: '/assets/booths/3x9-peninsula-l.png', alt: '3x9 Peninsula Booth - Left View' },
-    { src: '/assets/booths/3x9-peninsula-r.png', alt: '3x9 Peninsula Booth - Right View' },
-    { src: '/assets/booths/3x9-corner-l.png', alt: '3x9 Corner Booth - Left View' },
-    { src: '/assets/booths/3x9-corner-r.png', alt: '3x9 Corner Booth - Right View' },
-    { src: '/assets/booths/3x9-corner-set-2units-l.png', alt: '3x9 Corner Set (2 Units) - Left View' },
-    { src: '/assets/booths/3x9-corner-set-2units-r.png', alt: '3x9 Corner Set (2 Units) - Right View' },
-    { src: '/assets/booths/3x9-peninsula-set-2units-opposite-l.png', alt: '3x9 Peninsula Set (2 Units) - Left View' },
-    { src: '/assets/booths/3x9-peninsula-set-2units-opposite-r.png', alt: '3x9 Peninsula Set (2 Units) - Right View' },
+    { src: '/assets/booths/3x9-peninsula-l.webp', alt: '3x9 Peninsula Booth - Left View' },
+    { src: '/assets/booths/3x9-peninsula-r.webp', alt: '3x9 Peninsula Booth - Right View' },
+    { src: '/assets/booths/3x9-corner-l.webp', alt: '3x9 Corner Booth - Left View' },
+    { src: '/assets/booths/3x9-corner-r.webp', alt: '3x9 Corner Booth - Right View' },
+    { src: '/assets/booths/3x9-corner-set-2units-l.webp', alt: '3x9 Corner Set (2 Units) - Left View' },
+    { src: '/assets/booths/3x9-corner-set-2units-r.webp', alt: '3x9 Corner Set (2 Units) - Right View' },
+    { src: '/assets/booths/3x9-peninsula-set-2units-opposite-l.webp', alt: '3x9 Peninsula Set (2 Units) - Left View' },
+    { src: '/assets/booths/3x9-peninsula-set-2units-opposite-r.webp', alt: '3x9 Peninsula Set (2 Units) - Right View' },
 ];
 
 const pioneersImages = [
-    { src: '/assets/booths/6x9-shortside-wall-l.png', alt: '6x9 Shortside Wall - Left View' },
-    { src: '/assets/booths/6x9-shortside-wall-r.png', alt: '6x9 Shortside Wall - Right View' },
-    { src: '/assets/booths/6x9-shortside-wall-f.png', alt: '6x9 Shortside Wall - Front View' },
-    { src: '/assets/booths/6x9-shortside-wall-s.png', alt: '6x9 Shortside Wall - Side View' },
-    { src: '/assets/booths/6x9-long-side-wall-l.png', alt: '6x9 Long Side Wall - Left View' },
-    { src: '/assets/booths/6x9-long-side-wall-r.png', alt: '6x9 Long Side Wall - Right View' },
-    { src: '/assets/booths/6x9-long-side-wall-f.png', alt: '6x9 Long Side Wall - Front View' },
-    { src: '/assets/booths/6x9-long-side-wall-s.png', alt: '6x9 Long Side Wall - Side View' },
+    { src: '/assets/booths/6x9-shortside-wall-l.webp', alt: '6x9 Shortside Wall - Left View' },
+    { src: '/assets/booths/6x9-shortside-wall-r.webp', alt: '6x9 Shortside Wall - Right View' },
+    { src: '/assets/booths/6x9-shortside-wall-f.webp', alt: '6x9 Shortside Wall - Front View' },
+    { src: '/assets/booths/6x9-shortside-wall-s.webp', alt: '6x9 Shortside Wall - Side View' },
+    { src: '/assets/booths/6x9-long-side-wall-l.webp', alt: '6x9 Long Side Wall - Left View' },
+    { src: '/assets/booths/6x9-long-side-wall-r.webp', alt: '6x9 Long Side Wall - Right View' },
+    { src: '/assets/booths/6x9-long-side-wall-f.webp', alt: '6x9 Long Side Wall - Front View' },
+    { src: '/assets/booths/6x9-long-side-wall-s.webp', alt: '6x9 Long Side Wall - Side View' },
 ];
 
 const Exhibitors = () => {

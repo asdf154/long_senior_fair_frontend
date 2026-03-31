@@ -44,6 +44,8 @@ const BoothGallery = ({ images = [] }) => {
                         src={img.src}
                         alt={img.alt || `Booth render ${index + 1}`}
                         className={`booth-gallery__image ${index === current ? 'booth-gallery__image--active' : ''}`}
+                        loading={index === 0 ? 'eager' : 'lazy'}
+                        decoding="async"
                     />
                 ))}
             </div>
