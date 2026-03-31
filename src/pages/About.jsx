@@ -85,9 +85,8 @@ const About = () => {
                             <div className="about__organizer-card">
                                 <h3>Organised By</h3>
                                 <div className="about__organizer-logo">
-                                    <img src="/assets/branding/fa-logo.png" alt="Seniors Fair SG" />
+                                    <img src="/assets/branding/thyll-logo-portrait.png" alt="Thyll Events" />
                                 </div>
-                                <p>Seniors Fair SG © {new Date().getFullYear()}</p>
                             </div>
                         </div>
                     </div>

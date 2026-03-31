@@ -29,8 +29,8 @@ const EnquiryDialog = ({ isOpen, onClose }) => {
                 </button>
                 <h2 className="enquiry-dialog__title">Enquiry to exhibit - Seniors Fair SG 2026</h2>
                 <p className="enquiry-dialog__text">For enquiries, please reach out to us at:</p>
-                <a href="mailto:enquiry@thyllevents.com" className="enquiry-dialog__email">
-                    enquiry@thyllevents.com
+                <a href="mailto:enquiry@seniorsfair.sg" className="enquiry-dialog__email">
+                    enquiry@seniorsfair.sg
                 </a>
             </div>
         </div>

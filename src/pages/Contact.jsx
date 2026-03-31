@@ -45,7 +45,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4>Address</h4>
-                                        <p>Coming Soon</p>
+                                        <p>60 Paya Lebar Road<br />#06-28 Paya Lebar Square<br />Singapore 409051</p>
                                     </div>
                                 </div>
 
@@ -57,7 +57,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4>Phone</h4>
-                                        <p>Coming Soon</p>
+                                        <p>+65 6646 3445</p>
                                     </div>
                                 </div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4>Email</h4>
-                                        <p>Coming Soon</p>
+                                        <p>enquiry@seniorsfair.sg</p>
                                     </div>
                                 </div>
                             </div>

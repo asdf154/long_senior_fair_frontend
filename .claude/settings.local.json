@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(png|jpg|jpeg|svg|gif\\)$\")",
+      "Bash(xargs grep:*)",
+      "Bash(grep -r \"address\\\\|phone\\\\|email\" /e/Projects/SeniorFair/seniforFairFrontend/src --include=*.jsx --include=*.js)",
+      "Bash(npm run:*)",
+      "Bash(find /e/Projects/SeniorFair/seniforFairFrontend/src -type f \\\\\\(-name *.jsx -o -name *.js \\\\\\))",
+      "Bash(find /e/Projects/SeniorFair/seniforFairFrontend/src -type f -name *.css)",
+      "Bash(npx vite:*)"
+    ]
+  }
+}

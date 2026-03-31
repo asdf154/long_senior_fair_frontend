@@ -23,7 +23,7 @@
 /* ===== INFO STRIP ===== */
 .home__info-strip {
     background: var(--color-light-gray);
-    padding-bottom: var(--space-3xl);
+    padding: var(--space-lg) 0;
 }
 
 .home__info-grid {
@@ -34,7 +34,7 @@
 
 .home__info-card {
     text-align: center;
-    padding: var(--space-2xl) var(--space-lg);
+    padding: var(--space-lg) var(--space-lg);
     border-right: 1px solid var(--color-light-gray);
 }
 
@@ -43,7 +43,7 @@
 }
 
 .home__info-icon {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
 }
 
 .home__info-card h4 {
@@ -288,21 +288,11 @@
     margin-bottom: var(--space-xl);
 }
 
-.home__cta-placeholder {
-    background: var(--color-light-bg);
-    border: 1px solid var(--color-light-gray);
+.home__cta-photo {
+    width: 100%;
+    height: auto;
     border-radius: var(--radius-lg);
-    aspect-ratio: 16 / 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-md);
-    color: var(--color-mid-gray);
-}
-
-.home__cta-placeholder span {
-    font-size: 0.9rem;
+    object-fit: cover;
 }
 
 /* ===== RESPONSIVE ===== */

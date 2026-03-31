@@ -211,15 +211,11 @@ const Home = () => {
                             <Link to="/contact" className="btn btn-secondary">Get In Touch</Link>
                         </div>
                         <div className="home__cta-image">
-                            <div className="home__cta-placeholder">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                                    <circle cx="8.5" cy="8.5" r="1.5" />
-                                    <path d="M21 15l-5-5L5 21" />
-                                </svg>
-                                <span>Event Highlights Photo</span>
-                                <span className="placeholder-size-label">600 × 375 px (16:10 ratio)</span>
-                            </div>
+                            <img
+                                src="/assets/event-highlights.png"
+                                alt="Seniors Fair SG - Event Highlights"
+                                className="home__cta-photo"
+                            />
                         </div>
                     </div>
                 </div>

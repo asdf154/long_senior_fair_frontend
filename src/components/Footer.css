@@ -58,11 +58,16 @@
 /* Contact */
 .footer__contact ul li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--space-sm);
     margin-bottom: var(--space-md);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
     opacity: 0.7;
+}
+
+.footer__contact ul li svg {
+    margin-top: 2px;
 }
 
 .footer__contact svg {

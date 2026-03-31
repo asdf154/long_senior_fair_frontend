@@ -64,12 +64,12 @@ const Exhibitors = () => {
                                 <p className="exhibitors__booth-size">Minimum Size: 9 sqm (3m x 3m)</p>
                                 <ul className="exhibitors__booth-features">
                                     <li>Needle-punch Carpet</li>
-                                    <li>White Polyester Wall Panels</li>
+                                    <li>White Wall Panels</li>
                                     <li>Fascia Board (Co. Name)</li>
                                     <li>1x Information Desk</li>
                                     <li>2x Folding Chairs</li>
                                     <li>1x 13amp Power Point</li>
-                                    <li>2x Fluorescent Tubes</li>
+                                    <li>1x Fluorescent Tubes</li>
                                     <li>Option to choose 1 Side Open</li>
                                     <li>Option to choose 2 Side Open</li>
                                 </ul>
@@ -86,10 +86,16 @@ const Exhibitors = () => {
                                 <p className="exhibitors__booth-ideal">Ideal for: Brands wanting high visibility</p>
                                 <p className="exhibitors__booth-size">Minimum Size: 27 sqm (3m x 9m)</p>
                                 <ul className="exhibitors__booth-features">
-                                    <li>Everything in Legacy Booth</li>
-                                    <li>Prime traffic flow location</li>
+                                    <li>Needle-punch Carpet</li>
+                                    <li>White Wall Panels</li>
+                                    <li>Fascia Board (Co. Name)</li>
+                                    <li>3x Information Desk</li>
+                                    <li>6x Folding Chairs</li>
+                                    <li>3x 13amp Power Point</li>
+                                    <li>3x Fluorescent Tubes</li>
                                     <li>Option to choose 2 Side Open (Peninsula)</li>
                                     <li>Option to choose 3 Side Open (Corner)</li>
+                                    <li>Prime traffic flow location</li>
                                 </ul>
                                 <button className="btn btn-primary" onClick={() => setDialogOpen(true)}>Enquire with us</button>
                             </div>
@@ -104,11 +110,17 @@ const Exhibitors = () => {
                                 <p className="exhibitors__booth-ideal">Ideal for: Custom Branding & Large Displays</p>
                                 <p className="exhibitors__booth-size">Minimum Size: 54 sqm (6m x 9m)</p>
                                 <ul className="exhibitors__booth-features">
-                                    <li>Everything in Legacy Booth</li>
-                                    <li>Prime traffic flow location</li>
+                                    <li>Needle-punch Carpet</li>
+                                    <li>White Wall Panels</li>
+                                    <li>Fascia Board (Co. Name)</li>
+                                    <li>6x Information Desk</li>
+                                    <li>12x Folding Chairs</li>
+                                    <li>6x 13amp Power Point</li>
+                                    <li>6x Fluorescent Tubes</li>
                                     <li>Full flexibility for custom build</li>
                                     <li>Requires "Design-to-Print"</li>
                                     <li>Option to choose Bare Floor Space Only</li>
+                                    <li>Prime traffic flow location</li>
                                 </ul>
                                 <button className="btn btn-primary" onClick={() => setDialogOpen(true)}>Enquire with us</button>
                             </div>
