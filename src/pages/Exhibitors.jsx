@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import HeroSection from '../components/HeroSection';
-import EnquiryDialog from '../components/EnquiryDialog';
 import BoothGallery from '../components/BoothGallery';
 import './Exhibitors.css';
 
@@ -36,16 +35,39 @@ const pioneersImages = [
 ];
 
 const Exhibitors = () => {
-    const [dialogOpen, setDialogOpen] = useState(false);
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        jobTitle: '',
+        companyName: '',
+        email: '',
+        telephone: '',
+        mobile: '',
+        country: '',
+        package: '',
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const subject = encodeURIComponent('Exhibit With Us Enquiry - Seniors Fair SG 2026');
+        const body = encodeURIComponent(
+            `First Name: ${formData.firstName}\nLast Name: ${formData.lastName}\nJob Title: ${formData.jobTitle}\nCompany Name: ${formData.companyName}\nEmail: ${formData.email}\nTelephone: ${formData.telephone}\nMobile: ${formData.mobile}\nCountry: ${formData.country}\nPackage Interested In: ${formData.package}`
+        );
+        window.location.href = `mailto:enquiry@seniorsfair.sg?subject=${subject}&body=${body}`;
+    };
 
     return (
         <div className="exhibitors">
-            <HeroSection title="Exhibitors" subtitle="Seniors Fair SG" />
+            <HeroSection title="Exhibit With Us" subtitle="Seniors Fair SG" />
 
             <section className="exhibitors__intro section">
                 <div className="container">
                     <h2 className="section-title">Exhibitor Booths & Packages</h2>
-                    <p className="section-subtitle">
+                    <p className="section-subtitle" style={{ whiteSpace: 'nowrap' }}>
                         Explore our booth options and secure your spot at Singapore's premier seniors fair.
                     </p>
                 </div>
@@ -60,20 +82,19 @@ const Exhibitors = () => {
                             </div>
                             <div className="exhibitors__booth-info">
                                 <h3>Legacy Booth</h3>
-                                <p className="exhibitors__booth-ideal">Ideal for: SMEs & First-time Exhibitors</p>
-                                <p className="exhibitors__booth-size">Minimum Size: 9 sqm (3m x 3m)</p>
+                                <p className="exhibitors__booth-ideal">SMEs & First-time Exhibitors</p>
+                                <p className="exhibitors__booth-size">9 sqm (3m x 3m)</p>
                                 <ul className="exhibitors__booth-features">
                                     <li>Needle-punch Carpet</li>
-                                    <li>White Wall Panels</li>
+                                    <li>White Polyester Wall Panels</li>
                                     <li>Fascia Board (Co. Name)</li>
                                     <li>1x Information Desk</li>
                                     <li>2x Folding Chairs</li>
                                     <li>1x 13amp Power Point</li>
-                                    <li>1x Fluorescent Tubes</li>
+                                    <li>2x Fluorescent Tubes</li>
                                     <li>Option to choose 1 Side Open</li>
                                     <li>Option to choose 2 Side Open</li>
                                 </ul>
-                                <button className="btn btn-primary" onClick={() => setDialogOpen(true)}>Enquire with us</button>
                             </div>
                         </div>
 
@@ -83,21 +104,14 @@ const Exhibitors = () => {
                             </div>
                             <div className="exhibitors__booth-info">
                                 <h3>Active Agers Booth</h3>
-                                <p className="exhibitors__booth-ideal">Ideal for: Brands wanting high visibility</p>
-                                <p className="exhibitors__booth-size">Minimum Size: 27 sqm (3m x 9m)</p>
+                                <p className="exhibitors__booth-ideal">Brands wanting high visibility</p>
+                                <p className="exhibitors__booth-size">27 sqm (3m x 9m)</p>
                                 <ul className="exhibitors__booth-features">
-                                    <li>Needle-punch Carpet</li>
-                                    <li>White Wall Panels</li>
-                                    <li>Fascia Board (Co. Name)</li>
-                                    <li>3x Information Desk</li>
-                                    <li>6x Folding Chairs</li>
-                                    <li>3x 13amp Power Point</li>
-                                    <li>3x Fluorescent Tubes</li>
+                                    <li>Everything in Legacy Booth</li>
+                                    <li>Prime traffic flow location</li>
                                     <li>Option to choose 2 Side Open (Peninsula)</li>
                                     <li>Option to choose 3 Side Open (Corner)</li>
-                                    <li>Prime traffic flow location</li>
                                 </ul>
-                                <button className="btn btn-primary" onClick={() => setDialogOpen(true)}>Enquire with us</button>
                             </div>
                         </div>
 
@@ -107,39 +121,97 @@ const Exhibitors = () => {
                             </div>
                             <div className="exhibitors__booth-info">
                                 <h3>Pioneers Booth</h3>
-                                <p className="exhibitors__booth-ideal">Ideal for: Custom Branding & Large Displays</p>
-                                <p className="exhibitors__booth-size">Minimum Size: 54 sqm (6m x 9m)</p>
+                                <p className="exhibitors__booth-ideal">Custom Branding & Large Displays</p>
+                                <p className="exhibitors__booth-size">54 sqm (6m x 9m)</p>
                                 <ul className="exhibitors__booth-features">
-                                    <li>Needle-punch Carpet</li>
-                                    <li>White Wall Panels</li>
-                                    <li>Fascia Board (Co. Name)</li>
-                                    <li>6x Information Desk</li>
-                                    <li>12x Folding Chairs</li>
-                                    <li>6x 13amp Power Point</li>
-                                    <li>6x Fluorescent Tubes</li>
+                                    <li>Everything in Legacy Booth</li>
+                                    <li>Prime traffic flow location</li>
                                     <li>Full flexibility for custom build</li>
                                     <li>Requires "Design-to-Print"</li>
                                     <li>Option to choose Bare Floor Space Only</li>
-                                    <li>Prime traffic flow location</li>
                                 </ul>
-                                <button className="btn btn-primary" onClick={() => setDialogOpen(true)}>Enquire with us</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="exhibitors__contact section">
-                <div className="container" style={{ textAlign: 'center' }}>
-                    <h2 className="section-title">Interested in Exhibiting?</h2>
-                    <p className="section-subtitle">
-                        Contact us to learn more about exhibitor packages and early bird pricing.
-                    </p>
-                    <button className="btn btn-secondary" onClick={() => setDialogOpen(true)}>Contact Us</button>
+            {/* Floor Plan Section */}
+            <section className="exhibitors__floor-plan section">
+                <div className="container">
+                    <div className="exhibitors__floor-plan-map">
+                        <div className="exhibitors__floor-plan-title-bar">
+                            <span className="exhibitors__tentative-badge">TENTATIVE</span>
+                            <span className="exhibitors__floor-plan-title-text">Floor Plan</span>
+                        </div>
+                        <img
+                            src="/assets/floor-plan.svg"
+                            alt="Seniors Fair SG - Hall 4 Floor Plan Layout (Tentative)"
+                            className="exhibitors__floor-plan-image"
+                        />
+                    </div>
                 </div>
             </section>
 
-            <EnquiryDialog isOpen={dialogOpen} onClose={() => setDialogOpen(false)} />
+            {/* Contact Form Section */}
+            <section className="exhibitors__form-section section">
+                <div className="container">
+                    <h2 className="section-title">Get In Touch</h2>
+                    <p className="section-subtitle" style={{ whiteSpace: 'nowrap' }}>Fill in your details and we'll get back to you about exhibiting at Seniors Fair SG 2026.</p>
+                    <form className="exhibitors__form" onSubmit={handleSubmit}>
+                        <p className="exhibitors__form-note">
+                            Fields marked with an asterisk (<span>*</span>) are mandatory
+                        </p>
+                        <div className="exhibitors__form-grid">
+                            <div className="exhibitors__field">
+                                <label htmlFor="firstName">First Name <span>*</span></label>
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} required />
+                            </div>
+                            <div className="exhibitors__field">
+                                <label htmlFor="lastName">Last Name <span>*</span></label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleChange} required />
+                            </div>
+                            <div className="exhibitors__field">
+                                <label htmlFor="jobTitle">Job Title <span>*</span></label>
+                                <input type="text" id="jobTitle" name="jobTitle" placeholder="Job Title" value={formData.jobTitle} onChange={handleChange} required />
+                            </div>
+                            <div className="exhibitors__field">
+                                <label htmlFor="companyName">Company Name <span>*</span></label>
+                                <input type="text" id="companyName" name="companyName" placeholder="Company Name" value={formData.companyName} onChange={handleChange} required />
+                            </div>
+                            <div className="exhibitors__field">
+                                <label htmlFor="email">Email Address <span>*</span></label>
+                                <input type="email" id="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required />
+                            </div>
+                            <div className="exhibitors__field">
+                                <label htmlFor="telephone">Telephone <span>*</span></label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="Telephone" value={formData.telephone} onChange={handleChange} required />
+                            </div>
+                            <div className="exhibitors__field">
+                                <label htmlFor="mobile">Mobile Telephone</label>
+                                <input type="tel" id="mobile" name="mobile" placeholder="Mobile Telephone" value={formData.mobile} onChange={handleChange} />
+                            </div>
+                            <div className="exhibitors__field">
+                                <label htmlFor="country">Country</label>
+                                <input type="text" id="country" name="country" placeholder="Country" value={formData.country} onChange={handleChange} />
+                            </div>
+                            <div className="exhibitors__field exhibitors__field--full">
+                                <label htmlFor="package">Which package are you interested in?</label>
+                                <select id="package" name="package" value={formData.package} onChange={handleChange}>
+                                    <option value="">Select a package</option>
+                                    <option value="Legacy">Legacy</option>
+                                    <option value="Active Agers">Active Agers</option>
+                                    <option value="Pioneers">Pioneers</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className="exhibitors__form-submit">
+                            <button type="submit" className="btn btn-primary">Exhibit with us</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </div>
     );
 };

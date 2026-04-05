@@ -108,7 +108,7 @@
 }
 
 .about__organizer-logo img {
-    height: 120px;
+    height: 144px;
     margin: 0 auto;
 }
 
@@ -123,5 +123,9 @@
     .about__grid {
         grid-template-columns: 1fr;
         gap: var(--space-2xl);
+    }
+
+    .about__organizer-card {
+        display: none;
     }
 }

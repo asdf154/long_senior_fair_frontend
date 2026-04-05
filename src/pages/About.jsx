@@ -85,7 +85,9 @@ const About = () => {
                             <div className="about__organizer-card">
                                 <h3>Organised By</h3>
                                 <div className="about__organizer-logo">
-                                    <img src="/assets/branding/thyll-logo-portrait.png" alt="Thyll Events" />
+                                    <a href="https://thyllevents.com" target="_blank" rel="noopener noreferrer">
+                                        <img src="/assets/branding/thyll-logo-portrait.png" alt="Thyll Events" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
