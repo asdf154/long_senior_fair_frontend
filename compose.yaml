@@ -1,0 +1,8 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: seniorfair-frontend:local
+    ports:
+      - '8080:80'

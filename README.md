@@ -56,6 +56,34 @@ The app runs on the Vite local development server (typically `http://localhost:5
 - `npm run preview` - Preview the production build locally
 - `npm run lint` - Run ESLint checks
 
+## Run With Docker
+
+### Build the image
+
+```bash
+docker build -t seniorfair-frontend:local .
+```
+
+### Run the container
+
+```bash
+docker run --rm -p 8080:80 seniorfair-frontend:local
+```
+
+The production build will be available at `http://localhost:8080`.
+
+### Run with Docker Compose
+
+```bash
+docker compose up --build
+```
+
+This setup uses a multi-stage build:
+
+- `node:20-alpine` builds the Vite app
+- `nginx:alpine` serves the compiled `dist/` output
+- `docker/nginx/default.conf` enables React Router SPA fallback via `try_files`
+
 ## Project Structure
 
 ```text

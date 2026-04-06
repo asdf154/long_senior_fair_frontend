@@ -15,11 +15,6 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Close on route change
-    useEffect(() => {
-        setIsMobileOpen(false);
-    }, [location]);
-
     // Lock body scroll when drawer is open
     useEffect(() => {
         if (isMobileOpen) {
