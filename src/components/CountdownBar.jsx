@@ -5,8 +5,7 @@ const CountdownBar = () => {
     const [timeLeft, setTimeLeft] = useState(null);
 
     useEffect(() => {
-        // Target date TBD — using a placeholder future date
-        const targetDate = new Date('2026-06-15T10:00:00');
+        const targetDate = new Date('2027-01-21T10:00:00');
 
         const updateTimer = () => {
             const now = new Date();

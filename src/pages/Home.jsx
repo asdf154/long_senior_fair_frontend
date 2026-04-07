@@ -17,7 +17,7 @@ const Home = () => {
             {/* About Blurb */}
             <section className="home__about section">
                 <div className="container">
-                    <h2 className="section-title">Discover Seniors Fair SG 2026</h2>
+                    <h2 className="section-title">Discover Seniors Fair SG 2027</h2>
                     <p className="home__about-text">
                         <strong>Join us at Singapore's premier seniors exhibition.</strong> Discover a comprehensive range of
                         exhibitors offering health and wellness solutions, financial planning services, lifestyle
@@ -38,7 +38,7 @@ const Home = () => {
                             <div className="home__info-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-sky-blue)" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /><rect x="7" y="13" width="3" height="3" rx="0.5" /></svg>
                             </div>
-                            <h4>November 2026</h4>
+                            <h4>21 – 24 January 2027</h4>
                         </div>
                         <div className="home__info-card">
                             <div className="home__info-icon">

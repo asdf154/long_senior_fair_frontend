@@ -66,7 +66,7 @@ const About = () => {
                                 <h3>Event Details</h3>
                                 <div className="about__event-item">
                                     <span className="about__event-label">Date</span>
-                                    <span className="coming-soon-badge">Coming Soon</span>
+                                    <span className="about__event-value">21 – 24 January 2027</span>
                                 </div>
                                 <div className="about__event-item">
                                     <span className="about__event-label">Time</span>

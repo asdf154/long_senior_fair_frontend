@@ -53,7 +53,7 @@ const Exhibitors = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const subject = encodeURIComponent('Exhibit With Us Enquiry - Seniors Fair SG 2026');
+        const subject = encodeURIComponent('Exhibit With Us Enquiry - Seniors Fair SG 2027');
         const body = encodeURIComponent(
             `First Name: ${formData.firstName}\nLast Name: ${formData.lastName}\nJob Title: ${formData.jobTitle}\nCompany Name: ${formData.companyName}\nEmail: ${formData.email}\nTelephone: ${formData.telephone}\nMobile: ${formData.mobile}\nCountry: ${formData.country}\nPackage Interested In: ${formData.package}`
         );
@@ -157,7 +157,7 @@ const Exhibitors = () => {
             <section className="exhibitors__form-section section">
                 <div className="container">
                     <h2 className="section-title">Get In Touch</h2>
-                    <p className="section-subtitle" style={{ whiteSpace: 'nowrap' }}>Fill in your details and we'll get back to you about exhibiting at Seniors Fair SG 2026.</p>
+                    <p className="section-subtitle" style={{ whiteSpace: 'nowrap' }}>Fill in your details and we'll get back to you about exhibiting at Seniors Fair SG 2027.</p>
                     <form className="exhibitors__form" onSubmit={handleSubmit}>
                         <p className="exhibitors__form-note">
                             Fields marked with an asterisk (<span>*</span>) are mandatory
