@@ -8,7 +8,10 @@
       "Bash(find /e/Projects/SeniorFair/seniforFairFrontend/src -type f \\\\\\(-name *.jsx -o -name *.js \\\\\\))",
       "Bash(find /e/Projects/SeniorFair/seniforFairFrontend/src -type f -name *.css)",
       "Bash(npx vite:*)",
-      "Bash(npx sharp-cli:*)"
+      "Bash(npx sharp-cli:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:icon-sets.iconify.design)",
+      "WebFetch(domain:cdn.jsdelivr.net)"
     ]
   }
 }
