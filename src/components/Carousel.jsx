@@ -1,4 +1,8 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import banner1 from '../assets/banners/banner-1.jpeg';
+import banner2 from '../assets/banners/banner-2.jpeg';
+import banner3 from '../assets/banners/banner-3.jpeg';
+import banner4 from '../assets/banners/banner-4.jpeg';
 import './Carousel.css';
 
 const Carousel = ({ slides = [], autoPlayInterval = 4000 }) => {
@@ -9,10 +13,10 @@ const Carousel = ({ slides = [], autoPlayInterval = 4000 }) => {
     const autoPlayRef = useRef(null);
 
     const defaultSlides = [
-        { id: 1, label: 'Seniors Fair SG — Banner 1', image: '/assets/banner-1.jpeg' },
-        { id: 2, label: 'Seniors Fair SG — Banner 2', image: '/assets/banner-2.jpeg' },
-        { id: 3, label: 'Seniors Fair SG — Banner 3', image: '/assets/banner-3.jpeg' },
-        { id: 4, label: 'Seniors Fair SG — Banner 4', image: '/assets/banner-4.jpeg' },
+        { id: 1, label: 'Seniors Fair SG — Banner 1', image: banner1 },
+        { id: 2, label: 'Seniors Fair SG — Banner 2', image: banner2 },
+        { id: 3, label: 'Seniors Fair SG — Banner 3', image: banner3 },
+        { id: 4, label: 'Seniors Fair SG — Banner 4', image: banner4 },
     ];
 
     const items = slides.length > 0 ? slides : defaultSlides;
